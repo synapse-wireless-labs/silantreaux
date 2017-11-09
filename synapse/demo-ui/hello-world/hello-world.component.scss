@@ -1,0 +1,12 @@
+@import "synapse/sui/styles/fonts";
+@import "synapse/sui/styles/colors";
+
+html {
+  body {
+    font-family: $default-font-stack;
+    h1 {
+      font-family: $modern-font-stack;
+      color: $example-red;
+    }
+  }
+}
