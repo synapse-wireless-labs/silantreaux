@@ -3,7 +3,7 @@ package(default_visibility = ["//visibility:public"])
 load("@angular//:index.bzl", "ng_module")
 
 ng_module(
-  name = "src",
+  name = "demo-ui",
   srcs = glob(["*.ts"]),
   deps = ["//synapse/demo-ui/hello-world"],
   tsconfig = "//synapse:tsconfig.json",

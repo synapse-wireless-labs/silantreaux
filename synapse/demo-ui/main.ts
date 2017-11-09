@@ -1,4 +1,4 @@
 import {platformBrowser} from '@angular/platform-browser';
-import {AppModuleNgFactory} from 'src/app.ngfactory';
+import {AppModuleNgFactory} from 'synapse/demo-ui/app.ngfactory';
 
 platformBrowser().bootstrapModuleFactory(AppModuleNgFactory);
