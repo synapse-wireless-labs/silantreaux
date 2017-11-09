@@ -12,7 +12,8 @@ filegroup(
         "@ngrx",
         "rxjs",
         "zone.js",
-        "requirejs"
+        "requirejs",
+        "jasmine",
     ] for ext in [
         "*.js",
         "*.json",

@@ -21,6 +21,7 @@
       "node_modules/@angular/common/i18n_data*",
       "node_modules/@angular/common/locales.d.ts",
       "node_modules/@angular/common/locales/**",
-      "node_modules/@angular/tsc-wrapped/**"
+      "node_modules/@angular/tsc-wrapped/**",
+      "node_modules/@ngrx/core/**"
   ]
 }
