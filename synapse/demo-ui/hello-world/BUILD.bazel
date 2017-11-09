@@ -17,5 +17,5 @@ ng_module(
   srcs = glob(["*.ts"]),
   deps = [ ],
   assets = [":hello-world-styles"],
-  tsconfig = "//synapse:tsconfig.json",
+  tsconfig = "//synapse/demo-ui:tsconfig.json",
 )

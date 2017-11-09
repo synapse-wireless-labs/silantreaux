@@ -6,5 +6,5 @@ ng_module(
   name = "demo-ui",
   srcs = glob(["*.ts"]),
   deps = ["//synapse/demo-ui/hello-world"],
-  tsconfig = "//synapse:tsconfig.json",
+  tsconfig = ":tsconfig.json",
 )
