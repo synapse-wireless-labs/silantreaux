@@ -8,35 +8,23 @@
         "@angular/common": "5.0.0-rc.0",
         "@angular/core": "5.0.0-rc.0",
         "@angular/platform-browser": "5.0.0-rc.0",
-        "@ngrx/effects": "^4.1.1",
-        "@ngrx/store": "^4.1.1",
         "requirejs": "^2.3.5",
         "rxjs": "^5.4.1",
         "zone.js": "~0.8.13"
     },
     "devDependencies": {
-        "@alexeagle/rules_karma": "^0.0.1",
         "@angular/bazel": "5.0.0-rc.0",
         "@angular/compiler": "5.0.0-rc.0",
         "@angular/compiler-cli": "5.0.0-rc.0",
         "@bazel/typescript": "alexeagle/rules_typescript#hacky_concat_serve",
         "@types/jasmine": "^2.6.3",
         "@types/node": "^8.0.50",
-        "concurrently": "^3.5.0",
-        "express": "^4.16.1",
         "jasmine": "^2.8.0",
         "jasmine-angular-snapshot-testing": "^1.0.1",
-        "lite-server": "^2.3.0",
-        "livereload": "^0.6.2",
-        "protractor": "^5.1.2",
         "typescript": "~2.4.x"
     },
     "scripts": {
-        "generate": "tsc generate.ts && node generate.js",
-        "postinstall": "concurrently \"webdriver-manager update\" \"ngc -p angular.tsconfig.json\"",
-        "preserve": "bazel build src && ./bundle.sh",
-        "serve": "lite-server -c test/browser.config.json",
-        "pretest": "yarn run preserve",
-        "test": "concurrently \"yarn run serve\" protractor --kill-others --success first"
+        "postinstall": "ngc -p angular.tsconfig.json",
+        "preserve": "bazel build src && ./bundle.sh"
     }
 }
